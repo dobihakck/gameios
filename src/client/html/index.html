@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>gotocs.io</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="/assets/icon64.png">
+  <meta property="description" content="A complete example multiplayer .io web game implemented from scratch. Built with Javascript and Node.js. Open source on Github.">
+  <meta property="og:title" content="gotocs.io">
+  <meta property="og:description" content="A complete example multiplayer .io web game implemented from scratch. Built with Javascript and Node.js. Open source on Github.">
+  <meta property="og:image" content="/assets/icon1200.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58664433-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-58664433-3');
+  </script>
+</head>
+<body>
+  <canvas id="game-canvas"></canvas>
+  <div id="play-menu" class="hidden">
+    <h1>gotocs.io</h1>
+    <p>
+      Ваша задача убить противника напротив
+      <br />
+      Двигаясь вниз, вверх, вперёд, назад и пробел стрелять
+    </p>
+    <hr />
+    <p>
+      Разработчик <a href="https://vk.com/rlav97">Роман Таибов</a>.
+    </p>
+    <hr />
+    <input type="text" id="username-input" placeholder="Username" />
+    <button id="play-button">Играть</button>
+  </div>
+  <div id="leaderboard" class="hidden">
+    <table>
+      <tr>
+        <th>Ник</th>
+        <th>Очки</th>
+      </tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+    </table>
+  </div>
+  <div id="disconnect-modal" class="hidden">
+    <div>
+      <h2>Сервер прекратил свою работу</h2>
+      <hr />
+      <button id="reconnect-button">Переподключится</button>
+    </div>
+  </div>
+</body>
+</html>
